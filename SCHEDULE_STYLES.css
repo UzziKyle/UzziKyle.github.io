@@ -46,6 +46,14 @@ padding: 18px;
 color: #6E7376;
 }
 
+p:nth-child(28) {
+  border-radius: 0 0 0 8px;
+}
+
+p:nth-child(56) {
+  border-radius: 0 0 8px 0;
+}
+
 .subject {
   background-color: aliceblue;
 }
@@ -60,6 +68,7 @@ color: #6E7376;
 
 
 /*  GRID ITEMS PLACEMENT  */
+
 /*  HEADER  */
 p:nth-child(1) {
   grid-column: 1 / 9;
