@@ -12,13 +12,13 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(21, 1fr);
-  gap: 0;
+  grid-gap: 0;
   background-color: white;
   justify-items: center;
   border-style: solid;
   border-width: 1px;
   border-radius: 8px;
-  margin: 0 10vw;
+  margin: 2.5vh 2.5vw 5vh;
 }
 
 
@@ -42,7 +42,7 @@ border-style: solid;
 border-color: #B0B0B0;
 border-width: .5px;
 margin: 0;
-padding: 18px;
+padding: 3px;
 color: #6E7376;
 }
 
@@ -54,6 +54,7 @@ p:nth-child(56) {
   border-radius: 0 0 8px 0;
 }
 
+/*  Color Coding  */
 .subject {
   background-color: aliceblue;
 }
@@ -68,7 +69,6 @@ p:nth-child(56) {
 
 
 /*  GRID ITEMS PLACEMENT  */
-
 /*  HEADER  */
 p:nth-child(1) {
   grid-column: 1 / 9;
