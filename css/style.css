@@ -1,7 +1,6 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-
     /* outline: auto; */
 }
 
@@ -15,7 +14,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: whitesmoke;
     scrollbar-gutter: stable both-edges;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 /* nav section */
@@ -69,6 +68,18 @@ nav {
     z-index: -1;
 }
 
+@media only screen and (max-width: 450px) {
+    .nav-bar {
+        justify-content: space-between;
+    }
+    .nav-bar ul {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 
 /* main section */
 main > .sections {
@@ -78,7 +89,9 @@ main > .sections {
     place-items: center;
 }
 
-.headline {
+.headline > .container {
+    width: 75%;
+    max-width: 750px;
     text-align: center;
 }
 
@@ -140,12 +153,13 @@ main > .sections {
 
 .projects > .container > .projects-list {
     display: flex;
-    width: 90%;
-    max-width: 800px;
+    justify-content: center;
 }
 
 .projects > .container > .projects-list > div {
     display: flex;
+    width: 100%;
+    max-width: 800px;
     gap: 2rem;
 }
 
@@ -163,8 +177,6 @@ main > .sections {
 }
 
 .projects > .container > .projects-list > div > .project-desc {
-    position: relative;
-    width: 350px;
     font-size: 1.5rem;
 }
 
@@ -176,6 +188,22 @@ main > .sections {
 .project-desc > a > svg {
     display: block;
     height: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    .projects > .container > .projects-list > div {
+        flex-wrap: wrap;
+        width: 85%;
+    }
+    .projects > .container > .projects-list > div > .project-img {
+        width: 85vw;
+    }
+    .projects > .container > .projects-list > div > .project-img > img {
+        width: 85vw;
+    }
+    .project-desc > p {
+        margin-bottom: 2rem;
+    }
 }
 
 /* Footer Section */
