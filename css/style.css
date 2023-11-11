@@ -23,12 +23,13 @@ nav {
     top: 0;
     width: 100vw;
     z-index: 2;
+    background-color: whitesmoke;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: .5rem 2rem;
+    padding: .5rem 2rem 0 2rem;
 }
 
 .nav-bar ul {
@@ -177,16 +178,44 @@ main > .sections {
 }
 
 .projects > .container > .projects-list > div > .project-desc {
+    position: relative;
     font-size: 1.5rem;
+    height: fit-content;
 }
 
 .project-desc > p {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-desc > a {
+    color: black;
+    text-decoration: none;
+}
+
+.project-desc > .download-link {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.project-desc > .download-link > span {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.project-desc > .download-link > span:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.75rem solid lightblue;
+    z-index: -1;
 }
 
 .project-desc > a > svg {
-    display: block;
     height: 40px;
 }
 
