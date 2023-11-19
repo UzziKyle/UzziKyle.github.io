@@ -154,6 +154,7 @@ main > .sections {
 
 .projects > .container > .projects-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -161,20 +162,22 @@ main > .sections {
     display: flex;
     width: 100%;
     max-width: 800px;
+    margin-bottom: 3rem;
     gap: 2rem;
 }
 
 .projects > .container > .projects-list > div > .project-img {
-    height: auto;
+    height: 200px;
     width: 400px;
-    box-shadow: 0px 5px 5px gray;
 }
 
 .projects > .container > .projects-list > div > .project-img > img {
     display: block;
-    height: auto;
+    height: 200px;
     width: 400px;
-    object-fit: contain;
+    object-fit: fill;
+    box-shadow: 0px 5px 5px gray;
+    border-radius: 10px;
 }
 
 .projects > .container > .projects-list > div > .project-desc {
